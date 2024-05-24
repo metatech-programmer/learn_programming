@@ -18,7 +18,7 @@ PStudy es una aplicación móvil desarrollada en Android Studio que te permite a
 
 | Pantalla de Inicio | Cursos Disponibles | Reproduciendo Video |
 |-------------------|---------------------|----------------------|
-| ![Inicio](https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihaG6eU7Qlj9nBsrq7wmsTSDfJIaATEMzRh4xsBhLLZDxLj94-egsnmSVKaXLHltuEZOtiwxdJnhfevV9czoyi0sTZkwa6dNRjw=w1366-h599-rw-v1) | ![Cursos](screenshots/cursos.png) | ![Video](screenshots/video.png) |
+| ![Inicio](https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihaG6eU7Qlj9nBsrq7wmsTSDfJIaATEMzRh4xsBhLLZDxLj94-egsnmSVKaXLHltuEZOtiwxdJnhfevV9czoyi0sTZkwa6dNRjw=w1366-h599-rw-v1) | ![Cursos](https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihbnN63y0ZaZ88VRaWzT6jh-hkM_w0w3xYlQM4AAv9EWmaJxblCKhC2gX47WoMy_G7Zlk_P4rDdwNXR7RP2dyS6AfYW0S-VMInM=w1366-h599-rw-v1) | ![Video](https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpiha1_6P6AM2DfWi4Nm-Z48fMmy1EfUyANI1WXMvehoynACbrwhxrOUDIlzZZKDLwDtpWjSoYtxIf4pvyAea8s2e9UojXnsSMDWA=w1366-h599-rw-v1) |
 
 ## Instalación
 
