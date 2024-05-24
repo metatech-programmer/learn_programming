@@ -7,7 +7,7 @@
     </style>
 
     <!-- Tema sin ActionBar -->
-    <style name="Theme.Pstudy.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="Theme.Pstudy.NoActionBar" parent="Theme.AppCompat.DayNight.DarkActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
@@ -16,6 +16,6 @@
     <style name="Theme.Pstudy.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <!-- Overlay para los popups -->
-    <style name="Theme.Pstudy.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.Pstudy.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark" />
 
 </resources>

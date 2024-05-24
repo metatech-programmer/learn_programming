@@ -66,6 +66,7 @@ class CursosIntermedioActivity : AppCompatActivity() {
     private fun navigateToScreens(screenForward: Class<*>): Boolean {
         val intent = Intent(this, screenForward)
         intent.putExtra("name", name)
+        intent.putExtra("level", "Nivel: Intermedio")
         startActivity(intent)
         return true
     }
