@@ -1,28 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    
     >
+    <item
+    android:id="@+id/action_cursos"
+    android:title="Home"
+    android:icon="@drawable/baseline_dashboard_24"
+    android:orderInCategory="100"
+    app:showAsAction="ifRoom"/>
 
     <item
         android:id="@+id/action_settings"
         android:title="Perfil"
         android:icon="@drawable/baseline_person_24"
         android:orderInCategory="100"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="withText"/>
     <item
         android:id="@+id/action_principiante"
         android:orderInCategory="100"
-        android:title="Cursos Principiante"/>
+        android:title="Cursos Principiante"
+        app:showAsAction="withText"/>
 
     <item
         android:id="@+id/action_intermedio"
         android:orderInCategory="100"
-        android:title="Cursos Intermedio"/>
+        android:title="Cursos Intermedio"
+        app:showAsAction="withText"/>
     <item
         android:id="@+id/action_avanzado"
         android:orderInCategory="100"
-        android:title="Cursos Avanzado"/>
+        android:title="Cursos Avanzado"
+        app:showAsAction="withText"/>
 
 
 

@@ -19,10 +19,14 @@ class NameActivity : AppCompatActivity() {
         etName = findViewById(R.id.etName)
 
        btnSesion.setOnClickListener {
-           // Iniciar la siguiente actividad
-           val intent = Intent(this, CursosActivity::class.java)
-           intent.putExtra("name", etName.text.toString())
-           startActivity(intent)
+           if (etName.text.toString().isEmpty()) {
+               etName.error = "Por favor, ingresa tu nombre"
+           }else {
+
+               val intent = Intent(this, CursosActivity::class.java)
+               intent.putExtra("name", etName.text.toString())
+               startActivity(intent)
+           }
        }
     }
 

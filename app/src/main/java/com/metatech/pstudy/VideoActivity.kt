@@ -8,6 +8,7 @@ import androidx.cardview.widget.CardView
 
 class VideoActivity : AppCompatActivity() {
 
+    private val name by lazy { intent.getStringExtra("name") }
     private lateinit var webView: WebView
     private lateinit var btnBack: CardView
     private val youtubeVideoIds = mapOf(
@@ -33,7 +34,7 @@ class VideoActivity : AppCompatActivity() {
 
         val language = intent.getStringExtra("language") ?: "java" // valor predeterminado "java"
         val youtubeVideoId = youtubeVideoIds[language] ?: youtubeVideoIds.values.first()
-
+        intent.putExtra("name", name)
 
         webView.settings.javaScriptEnabled = true
         webView.webViewClient = WebViewClient()
@@ -42,6 +43,7 @@ class VideoActivity : AppCompatActivity() {
         webView.loadUrl(videoUrl)
 
         btnBack.setOnClickListener {
+            intent.putExtra("name", name)
             finish()
         }
     }

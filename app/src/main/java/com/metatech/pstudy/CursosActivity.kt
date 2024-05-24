@@ -22,6 +22,7 @@ class CursosActivity : AppCompatActivity() {
     private lateinit var btnSwift: ImageButton
     private lateinit var btnCss: ImageButton
 
+    private val name by lazy { intent.getStringExtra("name") }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cursos)
@@ -56,6 +57,7 @@ class CursosActivity : AppCompatActivity() {
     private fun onStartLearningClicked( lang: String) {
         val intent = Intent(this, VideoActivity::class.java)
         intent.putExtra("language", lang)
+        intent.putExtra("name", name)
         startActivity(intent)
     }
 
@@ -68,6 +70,7 @@ class CursosActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
+            R.id.action_cursos -> navigateToScreens(CursosActivity::class.java)
             R.id.action_settings -> navigateToScreens(PerfilActivity::class.java)
             R.id.action_principiante -> navigateToScreens(CursosPrincipianteActivity::class.java)
             R.id.action_intermedio -> navigateToScreens(CursosIntermedioActivity::class.java)
@@ -78,6 +81,7 @@ class CursosActivity : AppCompatActivity() {
 
     private fun navigateToScreens(screenForward: Class<*>): Boolean {
         val intent = Intent(this, screenForward)
+        intent.putExtra("name", name)
         startActivity(intent)
         return true
     }

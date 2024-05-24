@@ -15,6 +15,8 @@ class CursosPrincipianteActivity : AppCompatActivity() {
     private lateinit var btnCss: ImageButton
     private lateinit var btnPhp: ImageButton
 
+    private val name by lazy { intent.getStringExtra("name") }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,6 +38,7 @@ class CursosPrincipianteActivity : AppCompatActivity() {
 
     private fun onStartLearningClicked( lang: String) {
         val intent = Intent(this, VideoActivity::class.java)
+        intent.putExtra("name", name)
         intent.putExtra("language", lang)
         startActivity(intent)
     }
@@ -48,6 +51,7 @@ class CursosPrincipianteActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
+            R.id.action_cursos -> navigateToScreens(CursosActivity::class.java)
             R.id.action_settings -> navigateToScreens(PerfilActivity::class.java)
             R.id.action_principiante -> navigateToScreens(CursosPrincipianteActivity::class.java)
             R.id.action_intermedio -> navigateToScreens(CursosIntermedioActivity::class.java)
@@ -58,6 +62,7 @@ class CursosPrincipianteActivity : AppCompatActivity() {
 
     private fun navigateToScreens(screenForward: Class<*>): Boolean {
         val intent = Intent(this, screenForward)
+        intent.putExtra("name", name)
         startActivity(intent)
         return true
     }
