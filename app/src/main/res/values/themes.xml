@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Tema principal de la aplicación -->
+    <style name="Theme.Pstudy" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Personaliza tu tema aquí si es necesario -->
+    </style>
+
+    <!-- Tema sin ActionBar -->
+    <style name="Theme.Pstudy.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!-- Overlay para la barra de acción -->
+    <style name="Theme.Pstudy.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!-- Overlay para los popups -->
+    <style name="Theme.Pstudy.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>
