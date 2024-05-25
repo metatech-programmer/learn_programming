@@ -39,9 +39,11 @@
         <activity
             android:name=".VideoActivity"
             android:exported="false"
-            android:hardwareAccelerated="true"
             android:theme="@style/Theme.Pstudy"
-            android:windowSoftInputMode="adjustResize"/>
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize"
+            android:resizeableActivity="true"
+            />
         <activity
             android:name=".CursosActivity"
             android:exported="false"
@@ -50,7 +52,10 @@
         <activity
             android:name=".NameActivity"
             android:exported="false"
-            android:theme="@style/Theme.Pstudy.NoActionBar" />
+            android:theme="@style/Theme.Pstudy.NoActionBar"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize"
+            android:resizeableActivity="true"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"

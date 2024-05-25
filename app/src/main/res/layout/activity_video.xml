@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/text_black"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".VideoActivity">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cvBack"
@@ -15,7 +16,7 @@
         android:layout_gravity="center"
         android:layout_margin="10dp"
         app:cardBackgroundColor="@color/btn_background"
-        app:cardCornerRadius="25dp">
+        app:cardCornerRadius="5dp">
 
         <TextView
             android:layout_width="match_parent"
@@ -37,7 +38,7 @@
     <WebView
         android:id="@+id/webView"
         android:layout_width="match_parent"
-        android:layout_height="500dp" >
+        android:layout_height="420dp" >
 
 
     </WebView>
@@ -46,7 +47,8 @@
         android:layout_height="match_parent"
         android:layout_gravity="center"
         app:cardBackgroundColor="@color/text_white"
-        app:cardCornerRadius="35dp">
+        app:cardCornerRadius="35dp"
+        android:layout_margin="8dp">
 
 
 
