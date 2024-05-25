@@ -3,7 +3,17 @@
 
     <!-- Tema principal de la aplicación -->
     <style name="Theme.Pstudy" parent="Theme.AppCompat.Light.NoActionBar">
-        <!-- Personaliza tu tema aquí si es necesario -->
+        <!-- Aplicar el modo pantalla completa -->
+        <item name="android:windowFullscreen">true</item>
+        <!-- Ocultar la ActionBar -->
+        <item name="android:windowActionBar">false</item>
+        <!-- No superponer el modo de acción -->
+        <item name="android:windowActionModeOverlay">false</item>
+        <!-- Ocultar el título de la ventana -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- Superponer la ActionBar -->
+        <item name="android:windowActionBarOverlay">true</item>
+
     </style>
 
     <!-- Tema sin ActionBar -->
