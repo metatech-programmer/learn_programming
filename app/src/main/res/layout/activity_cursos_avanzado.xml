@@ -20,7 +20,7 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@mipmap/bg_ground"
+        android:background="#FCA15387"
         android:orientation="vertical">
 
     <LinearLayout
@@ -32,17 +32,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="25dp"
             android:gravity="center"
-            android:text="Nivel Avanzado"
+            android:text="Cursos de avanzados"
             android:textColor="@color/text_white"
             android:textSize="40sp"
-            android:background="@color/text_black"
+            android:background="#FC881717"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/lyFirst"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
 
         <LinearLayout
             android:id="@+id/lyFive"
@@ -112,7 +112,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAlignment="center"
-                    android:text="Proximamente mas cursos ..."
+                    android:text="Proximamente más cursos ..."
                     android:textColor="@color/text_white"
                     android:layout_margin="15dp"
                     android:fontFamily="@font/rem_regular"
